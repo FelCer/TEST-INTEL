@@ -1,0 +1,11 @@
+/*Import fonts*/
+@import '../fonts/fonts';
+/*Import Color*/
+@import '../colors/colors';
+/*Import Grid image*/
+@import '../gridImg/grid';
+
+.body {
+    font-family: $fontPrimary;
+    line-height: 1.25;
+}
