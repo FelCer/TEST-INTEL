@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!-- Navbar content -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Menu
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" (click)="listFilter('science')">science</a>
+          <a class="dropdown-item" (click)="listFilter('education')">education</a>
+          <a class="dropdown-item" (click)="listFilter('people')">people</a>
+          <a class="dropdown-item" (click)="listFilter('feelings')">feelings</a>
+          <a class="dropdown-item" (click)="listFilter('computer')">computer</a>
+          <a class="dropdown-item" (click)="listFilter('buildings')">buildings</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="form-inline">
+    <input [(ngModel)]="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+      (keyup.enter)="applyFilter()">
+    <button class="btn btn-outline-success my-2 my-sm-0" (click)="applyFilter()">Search</button>
+  </div>
+</nav>
+
+<div class="container-image">
+  <div *ngFor="let image of dataSource" class="column">
+    <img src="{{image.webformatURL}}" alt="{{image.tags}}" style="width:100%;" (click)="openModal(image.webformatURL, image.tags, image.views, image.likes)">
+  </div>
+</div>

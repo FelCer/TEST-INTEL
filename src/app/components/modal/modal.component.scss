@@ -1,0 +1,51 @@
+.modal-header{
+    display: initial; 
+    align-items: initial; 
+    justify-content: initial; 
+    padding: initial;
+}
+
+.close{
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    z-index: 99;
+    padding: 2rem 2rem;
+}
+
+.modal-body{
+    padding: initial;
+}
+
+img {
+    width: 100%;
+}
+
+.count {
+    position: absolute;
+    bottom: 2px;
+
+    ul{
+        display: flex;
+        position: relative;
+        list-style: none;
+        padding-left: 8px;
+        margin-bottom: 5px;
+        flex-wrap: wrap;
+
+        li {
+            margin-right: 8px;
+            color: white;
+        }
+
+        li:hover {
+            //border: 1px solid white;
+            padding: 2px;
+            border-radius: 10px;
+        }
+    }
+
+    ul:hover {
+        background-color:rgba(8, 0, 0, 0.4);
+    }
+}

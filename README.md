@@ -16,7 +16,7 @@
 ### Desarrollo
 
 1. Ejecutar el comando `npm install` el cual instala las dependencias del proyecto.
-2. Hay varios comandos disponibles, para su ejecucion segun la necesidad.
+2. Hay varios comandos disponibles, para su ejecución según la necesidad:
 2. 1. Comando `start:server` Arrancará el servidor de node (Backend).
 2. 2. Comando `dev:server` Arrancará el servidor de node y esta pendiente de cualquier cambio que se realice en el proyecto (Backend).
 2. 3. Comando `start:web` Arrancará el proyecto de angular (Frontend).
